@@ -1,0 +1,488 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background: #070724;
+  background-image: url(img/Group\ 6.png);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*_________________ header _________________*/
+
+header {
+  width: 100%;
+  height: 8vh;
+  position: relative;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  background-image: url(img/Group\ 6.png);
+  background-color: #070724;
+}
+
+.mainName {
+  color: #ffffff;
+  font-family: "Antonio", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.planetNameContainer {
+  display: inline-flex;
+  padding-right: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  margin-right: 15px;
+}
+
+.planetNameContainer a {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  /* 227.273% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.planetNameContainer :nth-child(8) {
+  margin-right: 10px;
+}
+
+.burgerIcon {
+  display: none;
+}
+
+/*_______________ main________________ */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 250px;
+  gap: 10%;
+}
+
+.infoContainer {
+  width: 40%;
+}
+
+.moonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.planetName {
+  color: #fff;
+  font-family: "Antonio", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.textContainer {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.7;
+}
+
+.wikipediaLinkContainer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 120px;
+  height: 25px;
+  margin-bottom: 24px;
+  margin-top: 15px;
+}
+
+.wikiSource {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  /* 178.571% */
+  opacity: 0.5;
+}
+
+.wikiWiki {
+  opacity: 0.5;
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  text-decoration-line: underline;
+}
+
+.wikiLink {
+  height: 40%;
+  position: absolute;
+  right: 0px;
+  bottom: 8px;
+}
+
+.button:nth-child(1) {
+  background: #419ebb;
+  border: none;
+  padding: 10px 183px 11px 74px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.borderBtn {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 183px 11px 74px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.button:nth-child(1)::before {
+  content: "01";
+  position: absolute;
+  left: 8%;
+  opacity: 0.5;
+}
+
+.borderBtn::before {
+  content: "02";
+  position: absolute;
+  left: 8%;
+  opacity: 0.5;
+}
+
+.borderBtn2::before {
+  content: "03";
+  position: absolute;
+  left: 8%;
+  opacity: 0.5;
+}
+
+.button {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  cursor: crosshair;
+}
+
+.button:nth-child(1) {
+  background: #419ebb;
+  border: none;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.button:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+.button:nth-child(3) {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.button:nth-child(1):before {
+  content: "01";
+}
+.button:nth-child(2):before {
+  content: "02";
+}
+.button:nth-child(3):before {
+  content: "03";
+}
+
+/*_______________ footer________________ */
+
+footer {
+  display: flex;
+  padding: 46px 165px;
+  gap: 30px;
+  justify-content: center;
+  width: 100vw;
+}
+
+.fDiv {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 23%;
+  height: 75%;
+  flex-shrink: 0;
+  padding: 10px 20px;
+}
+
+.fDivFW {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.fDivSW {
+  color: #fff;
+  font-family: Antonio;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1230px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 50px;
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .infoContainerBtn {
+    margin-right: 100px;
+    margin-left: 197px;
+  }
+
+  .moonContainer {
+    margin-top: 25%;
+  }
+}
+
+/**************** Tablet ***********************/
+
+@media only screen and (max-width: 1116px) {
+  .fDivFW {
+    font-size: 10px;
+  }
+
+  .fDivSW {
+    font-size: 17px;
+  }
+
+  .fSDiv {
+    width: 34%;
+  }
+
+    .fDiv {
+      width: 34%;
+      height: 11vw;
+    }
+
+    
+  
+}
+
+/************************* phone **********************/
+
+@media only screen and (max-width: 741px) {
+  .btnContainer {
+    width: 100%;
+    position: fixed;
+    top: 7.5%;
+    justify-content: space-between;
+    left: 0%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    border-bottom: 1px solid #fff;
+    background: #070724;
+    background-image: url(img/Group\ 6.png);
+  }
+
+  .geologyTxt {
+    display: none;
+  }
+
+  .button:nth-child(1) {
+    background-color: transparent;
+    padding: 0px;
+  }
+
+  .button:nth-child(2) {
+    border: none;
+    padding: 0px;
+  }
+
+  .button:nth-child(3) {
+    border: none;
+    padding: 0px;
+  }
+
+  .button:nth-child(1):before {
+    display: none;
+  }
+
+  .button:nth-child(2):before {
+    display: none;
+  }
+
+  .button:nth-child(3):before {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+    margin-bottom: 20px;
+  }
+
+  .fDiv {
+    width: 95%;
+    height: 40%;
+  }
+
+  .planetNameContainer {
+    display: none;
+  }
+
+  .burgerIcon {
+    display: flex;
+  }
+
+  header {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px 30px;
+    height: 8vh;
+  }
+
+  main {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moonContainer {
+    margin-top: 25%;
+    margin-left: 15%;
+  }
+
+  .infoContainer {
+    margin-left: 60%;
+  }
+  
+}
+
+
+@media only screen and (max-width: 527px) {
+  .moonContainer {
+    margin-top: 50%;
+  }
+}
