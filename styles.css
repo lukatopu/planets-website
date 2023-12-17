@@ -10,6 +10,7 @@ body {
   background-image: url(img/Group\ 6.png);
 }
 
+
 a {
   text-decoration: none;
 }
@@ -18,7 +19,7 @@ a {
 
 header {
   width: 100%;
-  height: 8vh;
+  height: 7vh;
   position: relative;
   border-bottom: 1px solid rgb(255, 255, 255, 0.2);
   display: flex;
@@ -32,7 +33,7 @@ header {
 .mainName {
   color: #ffffff;
   font-family: "Antonio", sans-serif;
-  font-size: 35px;
+  font-size: 5vh;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -41,6 +42,7 @@ header {
   margin-top: 5px;
   margin-left: 15px;
 }
+
 
 .planetNameContainer {
   display: inline-flex;
@@ -54,7 +56,7 @@ header {
 .planetNameContainer a {
   color: #fff;
   font-family: "League Spartan", sans-serif;
-  font-size: 13px;
+  font-size: 1.5vh;
   font-style: normal;
   font-weight: 700;
   line-height: 25px;
@@ -73,6 +75,8 @@ header {
 
 /*_______________ main________________ */
 
+
+
 main {
   display: flex;
   justify-content: space-between;
@@ -80,9 +84,7 @@ main {
   gap: 10%;
 }
 
-.infoContainer {
-  width: 40%;
-}
+
 
 .moonContainer {
   display: flex;
@@ -350,17 +352,20 @@ footer {
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
+    gap: 9%;
   }
 
-  .infoContainerBtn {
-    margin-right: 100px;
-    margin-left: 197px;
+  .planetNameContainer a { 
+    font-size: 1vh;
   }
 
   .moonContainer {
     margin-top: 25%;
+    width: 100%;
   }
+
+  
 }
 
 /**************** Tablet ***********************/
@@ -393,15 +398,34 @@ footer {
   .btnContainer {
     width: 100%;
     position: fixed;
-    top: 7.5%;
+    top: 7.5vh;
     justify-content: space-between;
     left: 0%;
     display: flex;
     flex-direction: row;
-    padding: 10px 10px;
+    padding: 0.5vw 0.5vw;
     border-bottom: 1px solid #fff;
     background: #070724;
     background-image: url(img/Group\ 6.png);
+  }
+
+  .mainName  {
+    font-size: 3vh;
+  }
+
+  .infoContainerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .infoContainerBtn {
+    position: absolute;
+  }
+
+  main {
+    align-items: center;
   }
 
   .geologyTxt {
@@ -440,8 +464,7 @@ footer {
     padding: 0px;
     display: flex;
     align-items: center;
-    margin-left: 7%;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
   }
 
   .fDiv {
@@ -460,29 +483,44 @@ footer {
   header {
     justify-content: space-between;
     flex-direction: row;
-    padding: 0px 30px;
+    padding: 0px 1.5vw;
     height: 8vh;
-  }
-
-  main {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .moonContainer {
-    margin-top: 25%;
-    margin-left: 15%;
-  }
-
-  .infoContainer {
-    margin-left: 60%;
   }
   
 }
 
 
-@media only screen and (max-width: 527px) {
+@media only screen and (max-width: 340px) {
+
+  .moonImg {
+    width: inherit;
+  }
+
   .moonContainer {
-    margin-top: 50%;
+    width: 80%;
+  }
+
+  .planetName {
+    font-size: 2rem;
+  }
+
+  .textContainer {
+    font-size: 0.8rem;
+  }
+
+  .button:nth-child(3) {
+    font-size: 2.5vw;
+  }
+  .button:nth-child(2) {
+    font-size: 2.5vw;
+  }
+  .button:nth-child(1) {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 261px) {
+  .moonContainer {
+    margin-top: 51%;
   }
 }
